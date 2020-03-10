@@ -22,19 +22,34 @@ namespace TA_20170140104_new_.GUI
 		private SqlCommand cmd;
 		private DataSet ds;
 		private SqlDataAdapter da;
-		public string kodebarang, namabarang, warna, ukuran, harga = "";
+        /// <values><c>kodebarang</c>nama barang untuk menuliskan namabarang di textbox</values>
+        ///<summary>kode barang</summary>
+        public string kodebarang = "";
+        ///<summary>nama barang</summary>
+
+        public string namabarang = "";
+        ///<summary>warna barang</summary>
+        public string warna = "";
+        /// <summary>
+        /// ukuran
+        /// </summary>
+        public string ukuran = "";
+        /// <summary>
+        /// harga
+        /// </summary>
+        public string harga = "";
 
 		private void textBox_cari_TextChanged(object sender, EventArgs e)
 		{
 			cari_barang();
 		}
 
-
         private void dataGridView_barang_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
 		{
 			try
 			{
 				DataGridViewRow row = this.dataGridView_barang.Rows[e.RowIndex];
+
 				kodebarang = row.Cells["KodeBarang"].Value.ToString();
 				namabarang = row.Cells["NamaBarang"].Value.ToString();
 				warna = row.Cells["Warna"].Value.ToString();

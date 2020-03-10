@@ -16,7 +16,22 @@ namespace TA_20170140104_new_.GUI
 		private SqlCommand cmd;
 		private DataSet ds;
 		private SqlDataAdapter da;
-		public string idpelanggan, namapelanggan, alamat, notelpon = "";
+        /// <summary>
+        /// untuk menampilkan id pelanggan
+        /// </summary>
+        public string idpelanggan = "";
+        /// <summary>
+        /// untuk menampilkan nama pelanggan
+        /// </summary>
+        public string namapelanggan = "";
+        /// <summary>
+        /// untuk menampilkan alamat pelanggan
+        /// </summary>
+        public string alamat = "";
+        /// <summary>
+        /// untuk nenampilkan no tlp pelanggan
+        /// </summary>
+        public string notelpon = "";
 
 		Kelas.Koneksi konn = new Kelas.Koneksi();
 
