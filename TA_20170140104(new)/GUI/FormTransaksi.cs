@@ -11,6 +11,10 @@ using System.Data.SqlClient;
 
 namespace TA_20170140104_new_.GUI
 {
+	/// <summary>
+	/// Class <c>FormTransaksi</c> form untuk transaksi pembelian barang
+	/// </summary>
+
 	public partial class FormTransaksi : Form
 	{
 
