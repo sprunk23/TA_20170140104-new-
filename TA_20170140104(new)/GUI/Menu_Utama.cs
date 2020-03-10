@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace TA_20170140104_new_.GUI
 {
+	/// <summary>
+	/// class <c>Menu_Utama</c> tampilan menu utama
+	/// </summary>
 	public partial class Menu_Utama : Form
 	{
 		//form jd objek
@@ -68,6 +71,11 @@ namespace TA_20170140104_new_.GUI
 			}
 		}
 
+		/// <summary>
+		/// menu penjualan 
+		/// </summary>
+		/// <param name="sender"><c>object sender</c> parameter yang disebut Pengirim yang berisi referensi ke kontrol / objek yang mengangkat peristiwa.</param>
+		/// <param name="e"><c>EventArgs e</c> parameter yang disebut e yang berisi data peristiwa.</param>
 		private void submenu_penjualan_Click(object sender, EventArgs e)
 		{
 			if (trx == null)
