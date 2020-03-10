@@ -11,6 +11,9 @@ using System.Data.SqlClient;
 
 namespace TA_20170140104_new_.GUI
 {
+    /// <summary>
+    /// kelas untuk mengambil data barang
+    /// </summary>
 	public partial class DialogBarang : Form
 	{
 		private SqlCommand cmd;
