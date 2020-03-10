@@ -8,9 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+/// <summary>
+/// tugas sqta
+/// </summary>
 namespace TA_20170140104_new_.GUI
 {
+    /// <summary>
+    /// kelas pelangan untuk menulis perintah query, menampilkan data, dan mengeksekusi perintah query
+    /// </summary>
 	public partial class DialogPelanggan : Form
 	{
 		private SqlCommand cmd;
@@ -112,7 +117,9 @@ namespace TA_20170140104_new_.GUI
 				MessageBox.Show(x.ToString());
 			}
 		}
-
+        /// <summary>
+        ///  ketika user klick id pelanggan maka akan muncul di texbox class from transaksi tentang id pelanggan tersebut
+        /// </summary>
 		public String ambil_id_pelanggan
 		{
 			get
@@ -120,14 +127,19 @@ namespace TA_20170140104_new_.GUI
 				return idpelanggan;
 			}
 		}
-		//function ambil nama pelanggan
-		public String ambil_nama_pelanggan
+        /// <summary>
+        /// ketika user klick nama pelanggan maka akan muncul di texbox class from transaksi tentang id pelanggan tersebut
+        /// </summary>
+        public String ambil_nama_pelanggan
 		{
 			get
 			{
 				return namapelanggan;
 			}
 		}
+        /// <summary>
+        /// ketika user klick alamat pelanggan maka akan muncul di texbox class from transaksi tentang id pelanggan tersebut
+        /// </summary>
 		public String ambil_alamat
 		{
 			get
@@ -135,7 +147,9 @@ namespace TA_20170140104_new_.GUI
 				return alamat;
 			}
 		}
-
+        /// <summary>
+        /// ketika user klick notelp pelanggan maka akan muncul di texbox class from transaksi tentang id pelanggan tersebut
+        /// </summary>
 		public String ambil_no_telpon
 		{
 			get

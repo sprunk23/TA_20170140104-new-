@@ -11,6 +11,9 @@ using System.Data.SqlClient;
 
 namespace TA_20170140104_new_.GUI
 {
+    /// <summary>
+    /// untuk mebambah edit dan delet daftar pelanggan
+    /// </summary>
 	public partial class FormPelanggan : Form
 	{
 		private SqlCommand cmd; // perintah query

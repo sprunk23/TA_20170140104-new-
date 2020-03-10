@@ -9,8 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TA_20170140104_new_.GUI
-{
-	public partial class Menu_Utama : Form
+{/// <summary>
+/// merupakan tampilan awal saat app dijalankan
+/// </summary>
+    public partial class Menu_Utama : Form
 	{
 		//form jd objek
 		FormBarang brg;
@@ -37,7 +39,9 @@ namespace TA_20170140104_new_.GUI
 		{
 			InitializeComponent();
 		}
-
+        ///<summary>
+        ///submenu
+        /// </summary>
 		private void submenu_barang_Click(object sender, EventArgs e)
 		{
 			if (brg == null)

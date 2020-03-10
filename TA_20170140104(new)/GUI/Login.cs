@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace TA_20170140104_new_.GUI
 {
+    /// <summary>
+    /// form untuk login admin
+    /// </summary>
 	public partial class Login : Form
 	{
 		public Login()
