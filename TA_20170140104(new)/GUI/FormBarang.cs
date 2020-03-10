@@ -119,7 +119,9 @@ namespace TA_20170140104_new_.GUI
 			textBox_kodebarang.Text = urut;
 			conn.Close();
 		}
-
+        /// <summary>
+        /// form barang
+        /// </summary>
 		public FormBarang()
 		{
 			InitializeComponent();
