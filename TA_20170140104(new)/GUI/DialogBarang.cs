@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+/// <summary>
+/// kelas dialog barang untuk mengambil barang
+/// </summary>
 namespace TA_20170140104_new_.GUI
 {
     /// <summary>
@@ -25,12 +28,6 @@ namespace TA_20170140104_new_.GUI
 		{
 			cari_barang();
 		}
-
-        /// <summary>
-        /// untuk menampilkan data berupa tabel 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
 
 
         private void dataGridView_barang_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -116,7 +113,10 @@ namespace TA_20170140104_new_.GUI
 			InitializeComponent();
 			refresh_barang();
 		}
-
+        /// <summary>
+        /// ketika user klick kode barang maka akan muncul di texbox class from transaksi tentang barang tersebut
+        /// <returns>kode barang</returns>
+        /// </summary>
 		public String ambil_kode_barang
 		{
 			get
@@ -124,7 +124,10 @@ namespace TA_20170140104_new_.GUI
 				return kodebarang;
 			}
 		}
-
+        /// <summary>
+        /// ketika user klick ambil nama barang maka akan muncul di texbox class from transaksi tentang barang tersebut
+        /// <returns>nama barang</returns>
+        /// </summary>
 		public String ambil_nama_barang
 		{
 			get
@@ -132,7 +135,10 @@ namespace TA_20170140104_new_.GUI
 				return namabarang;
 			}
 		}
-
+        /// <summary>
+        /// ketika user klick warba barang maka akan muncul di texbox class from transaksi tentang barang tersebut
+        /// <returns>warna</returns>
+        /// </summary>
 		public String ambil_warna
 		{
 			get
@@ -140,7 +146,10 @@ namespace TA_20170140104_new_.GUI
 				return warna;
 			}
 		}
-
+        /// <summary>
+        /// ketika user klick ukuran barang maka akan muncul di texbox class from transaksi tentang barang tersebut
+        /// <returns>ukuran</returns>
+        /// </summary>
 		public String ambil_ukuran
 		{
 			get
@@ -148,8 +157,15 @@ namespace TA_20170140104_new_.GUI
 				return ukuran;
 			}
 		}
+        /// <summary>
+        /// kelas untuk menampilkan barang setelah user klick harga barang
+        /// <returns>
+        /// harga
+        /// </returns>
+        /// </summary>
 
-		public String ambil_harga
+
+        public String ambil_harga
 		{
 			get
 			{
