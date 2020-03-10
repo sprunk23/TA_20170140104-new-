@@ -9,11 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TA_20170140104_new_.GUI
-{
-	/// <summary>
-	/// class <c>Menu_Utama</c> tampilan menu utama
-	/// </summary>
-	public partial class Menu_Utama : Form
+{/// <summary>
+/// merupakan tampilan awal saat app dijalankan
+/// </summary>
+    public partial class Menu_Utama : Form
 	{
 		//form jd objek
 		FormBarang brg;
@@ -40,7 +39,9 @@ namespace TA_20170140104_new_.GUI
 		{
 			InitializeComponent();
 		}
-
+        ///<summary>
+        ///submenu
+        /// </summary>
 		private void submenu_barang_Click(object sender, EventArgs e)
 		{
 			if (brg == null)
@@ -71,11 +72,6 @@ namespace TA_20170140104_new_.GUI
 			}
 		}
 
-		/// <summary>
-		/// menu penjualan 
-		/// </summary>
-		/// <param name="sender"><c>object sender</c> parameter yang disebut Pengirim yang berisi referensi ke kontrol / objek yang mengangkat peristiwa.</param>
-		/// <param name="e"><c>EventArgs e</c> parameter yang disebut e yang berisi data peristiwa.</param>
 		private void submenu_penjualan_Click(object sender, EventArgs e)
 		{
 			if (trx == null)

@@ -11,6 +11,9 @@ using System.Data.SqlClient;
 
 namespace TA_20170140104_new_.GUI
 {
+    /// <summary>
+    /// kelas barang untuk menulis perintah query, menampilkan data, dan mengeksekusi perintah query
+    /// </summary>
 	public partial class FormBarang : Form
 	{
 		//variable sql
@@ -47,6 +50,9 @@ namespace TA_20170140104_new_.GUI
 					ds = new DataSet();
 					da = new SqlDataAdapter(cmd);
 					da.Fill(ds, "tbl_barang");
+                    ///<sumary>
+                    ///data gird view
+                    /// </sumary>
 					dataGridView_barang.DataSource = ds;
 					dataGridView_barang.DataMember = "tbl_barang";
 					dataGridView_barang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -120,7 +126,7 @@ namespace TA_20170140104_new_.GUI
 			conn.Close();
 		}
         /// <summary>
-        /// form barang
+        /// form barang digunakan untuk mengeksekusi auto number refresh barang dan clear
         /// </summary>
 		public FormBarang()
 		{
