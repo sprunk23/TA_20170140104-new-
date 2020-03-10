@@ -20,6 +20,10 @@ namespace TA_20170140104_new_.GUI
 
 		Kelas.Koneksi konn = new Kelas.Koneksi();
 
+		/// <summary>
+		/// <c>clear</c> membuat halaman awal kosong dan tidak berisi
+		/// </summary>
+
 		private void clear()
 		{
 			textBox_nokwitansi.Text = "";
@@ -79,6 +83,10 @@ namespace TA_20170140104_new_.GUI
 			}
 		}
 
+		/// <summary>
+		/// <c>auto_number</c> membuat nomer kwitansi menjadi auto atau urut
+		/// </summary>
+		
 		private void auto_number()
 		{
 			long hitung; // penentukan pjg
@@ -166,6 +174,11 @@ namespace TA_20170140104_new_.GUI
 
 		}
 
+		/// <summary>
+		/// untuk menjumlah total harga belanjaan
+		/// </summary>
+
+
 		private void totalseluruh()
 		{
 			SqlConnection conn = konn.GetConn();
@@ -200,6 +213,13 @@ namespace TA_20170140104_new_.GUI
 
 		}
 
+		/// <summary>
+		/// button untuk mencari nama pelanggan
+		/// </summary>
+		/// <param name="sender"><c>object sender</c> parameter yang disebut Pengirim yang berisi referensi ke kontrol / objek yang mengangkat peristiwa.</param>
+		/// <param name="e"><c>EventArgs e</c> parameter yang disebut e yang berisi data peristiwa.</param>
+
+
 		private void button_caripelanggan_Click(object sender, EventArgs e)
 		{
 			DialogPelanggan plgn = new DialogPelanggan();
@@ -208,6 +228,13 @@ namespace TA_20170140104_new_.GUI
 			textBox_namapelanggan.Text = plgn.ambil_nama_pelanggan;
 			
 		}
+
+
+		/// <summary>
+		/// button untuk mencari nama pelanggan
+		/// </summary>
+		/// <param name="sender"><c>object sender</c> parameter yang disebut Pengirim yang berisi referensi ke kontrol / objek yang mengangkat peristiwa.</param>
+		/// <param name="e"><c>EventArgs e</c> parameter yang disebut e yang berisi data peristiwa.</param>
 
 		private void button_caribarang_Click(object sender, EventArgs e)
 		{
@@ -220,6 +247,14 @@ namespace TA_20170140104_new_.GUI
 			textBox_harga.Text = brg.ambil_harga;
 		}
 
+
+		/// <summary>
+		/// buttom untuk menambah data transaksi baru
+		/// </summary>
+		/// <param name="sender"><c>object sender</c> parameter yang disebut Pengirim yang berisi referensi ke kontrol / objek yang mengangkat peristiwa.</param>
+		/// <param name="e"><c>EventArgs e</c> parameter yang disebut e yang berisi data peristiwa.</param>
+
+
 		private void button_baru_Click(object sender, EventArgs e)
 		{
 			awal();
@@ -227,6 +262,13 @@ namespace TA_20170140104_new_.GUI
 			dateTimePicker_kwitansi.Focus();
 			button_caripelanggan.Enabled = true;
 		}
+
+		/// <summary>
+		/// buttom untuk menambah data barang
+		/// </summary>
+		/// <param name="sender"><c>object sender</c> parameter yang disebut Pengirim yang berisi referensi ke kontrol / objek yang mengangkat peristiwa.</param>
+		/// <param name="e"><c>EventArgs e</c> parameter yang disebut e yang berisi data peristiwa.</param>
+
 
 		private void button_plus_Click(object sender, EventArgs e)
 		{
@@ -263,6 +305,13 @@ namespace TA_20170140104_new_.GUI
 			}
 		}
 
+		/// <summary>
+		/// menampilkan data transaksi yang sudah dibuat
+		/// </summary>
+		/// <param name="sender"><c>object sender</c> parameter yang disebut Pengirim yang berisi referensi ke kontrol / objek yang mengangkat peristiwa.</param>
+		/// <param name="e"><c>EventArgs e</c> parameter yang disebut e yang berisi data peristiwa.</param>
+
+
 		private void dataGridView_transaksi_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
 		{
 			button_plus.Enabled = false;
@@ -275,6 +324,13 @@ namespace TA_20170140104_new_.GUI
 			textBox_harga.Text = row.Cells["Harga"].Value.ToString();
 			textBox_jumlah.Text = row.Cells["Jumlah"].Value.ToString();
 		}
+
+		/// <summary>
+		/// buttom untuk mengurangi/menghapus data barang
+		/// </summary>
+		/// <param name="sender"><c>object sender</c> parameter yang disebut Pengirim yang berisi referensi ke kontrol / objek yang mengangkat peristiwa.</param>
+		/// <param name="e"><c>EventArgs e</c> parameter yang disebut e yang berisi data peristiwa.</param>
+
 
 		private void button_minus_Click(object sender, EventArgs e)
 		{
@@ -292,6 +348,13 @@ namespace TA_20170140104_new_.GUI
 				button_minus.Enabled = false;
 			}
 		}
+
+		/// <summary>
+		/// buttom untuk menyimpan data
+		/// </summary>
+		/// <param name="sender"><c>object sender</c> parameter yang disebut Pengirim yang berisi referensi ke kontrol / objek yang mengangkat peristiwa.</param>
+		/// <param name="e"><c>EventArgs e</c> parameter yang disebut e yang berisi data peristiwa.</param>
+
 
 		private void button_simpan_Click(object sender, EventArgs e)
 		{
@@ -314,10 +377,18 @@ namespace TA_20170140104_new_.GUI
 			
 		}
 
+		/// <summary>
+		/// <c>textBox_bayar</c> 
+		/// </summary>
+		/// <param name="sender"><c>object sender</c> parameter yang disebut Pengirim yang berisi referensi ke kontrol / objek yang mengangkat peristiwa.</param>
+		/// <param name="e"><c>EventArgs e</c> parameter yang disebut e yang berisi data peristiwa.</param>
+
+
 		private void textBox_bayar_TextChanged(object sender, EventArgs e)
 		{
 			kembalian();
 		}
+
 
 		void kembalian()
 		{
